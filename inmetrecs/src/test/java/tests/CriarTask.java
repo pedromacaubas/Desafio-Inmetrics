@@ -41,9 +41,8 @@ public class CriarTask {
          @Param ( name="senha")String senha,
          @Param ( name="title")String title,
          @Param ( name="tellus")String tellus
-          ){
-
-              String textoTask = new LoginPage ( navegador )
+          ){//
+               String textoTask = new LoginPage ( navegador )
 
                .clicarBotaoSingup()
                .efetuarCadastro(name,login,senha)
