@@ -22,4 +22,13 @@ https://github.com/mozilla/geckodriver/releases (Firefox)
 
 http://selenium-release.storage.googleapis.com/index.html?path=3.6 (Internet Explorer) 
 
-5. 
+5. Na page Web contém o método public static WebDriver createChrome(), nele é onde criado o driver do chrome, alterar de: C:\Users\PedroSilvaMacaubas\Drivers\chromedriver.exe para: o local onde foi realizado o download do driver, ou um local de preferência
+
+6. Na estrutura de diretório src\main\resources contém o arquivo CriarTask.csv, clicar com o botão direito em seguida clicar em Copy Path, ir na estrutura de diretório src\test\java\tests\ abrir CriarTask.java alterar a linha         System.setProperty("webdriver.chrome.driver", "C:\\Users\\PedroSilvaMacaubas\\Drivers\\chromedriver.exe"); para o conteúdo copiado quando foi clicado em Copy Path no arquivo CriarTask
+
+7. Ainda no test CriarTask.java, alterar a linha String screenshotArquivo = "C:\\Evidencias\\Evidencias" + Generator.dataHoraParaArquivo () + test.getMethodName() + ".png"; alterar o caminho C:\\Evidencias\\Evidencias, esse vai ser o caminho dos screenshot, então basta criar os diretórios dentro de C: igual acima, ou da forma que achar melhor, não esquecendo de alterar no CriarTAsk.java
+
+
+
+
+
