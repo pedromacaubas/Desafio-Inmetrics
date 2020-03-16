@@ -59,7 +59,8 @@ Atribuir quantas linhas desejar, seguindo o padrão abaixo:
 
 testCriarTask,name,login,senha,title,tellus
           ,task,criartaskum,747474,taskum,12345
-										,taskdois,taskdois,747474,taskdois,12345
+	  
+	 ,taskdois,taskdois,747474,taskdois,12345
 
 #### Assista ao vídeo da execução da automação
 [![Vídeo Automação](http://img.youtube.com/vi/Bs6UGdk546g/0.jpg)](http://www.youtube.com/watch?v=Bs6UGdk546g "Vídeo Automação")
