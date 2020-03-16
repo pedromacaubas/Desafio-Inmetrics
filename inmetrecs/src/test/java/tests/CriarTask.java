@@ -18,10 +18,8 @@ import suporte.Web;
 import static org.junit.Assert.assertEquals;
 
 
-@RunWith(DataDrivenTestRunner.class) // com essa anotation estou dizedno para usar a biblioteca DataDrivenTestRunner
+@RunWith(DataDrivenTestRunner.class) // com essa anotation estou dizendo para usar a biblioteca DataDrivenTestRunner
 @DataLoader(filePaths = "C:\\repository\\Desafio-Inmetrics\\inmetrecs\\src\\main\\resources\\CriarTask.csv") // filePaths são os arquivos que queremos utilizar, coloquei
-//o nome do arquivo como InformacoesUsuarioTest, mas poderia ser qualquer nome, esseé somente o nome do arquivo
-
 
 public class CriarTask {
     // variavel do tipo webdriver
@@ -34,8 +32,6 @@ public class CriarTask {
       //chamando direto a página
       navegador = Web.createChrome ();
 
-      //chamando através da nuverm
-      //navegador = Web.createBrowserStack();
   }
 
   @Test
@@ -50,8 +46,7 @@ public class CriarTask {
               String textoTask = new LoginPage ( navegador )
 
                .clicarBotaoSingup()
-               //.efetuarCadastro("pedroteste02","pedroteste90","pedroteste04")
-                              .efetuarCadastro(name,login,senha)
+               .efetuarCadastro(name,login,senha)
                .clicarBotaoSomeTasks()
                .clicarBotaoAddTask()
                .preencherCampoTitle(title)
@@ -60,19 +55,9 @@ public class CriarTask {
                .selecionarTimeLimit()
                .preencherCampoTellUs(tellus)
                .clicarBotaoSaveForm()
-
-             .capturarTextoTask ();
-//oi
-              assertEquals ( "Here is your tasks, you can manage what you need to do in the next days ou hours, it will help you! Click on the task status to change it! ;)",textoTask);
-      String screenshotArquivo = "C:\\Evidencias\\Evidencias" + Generator.dataHoraParaArquivo () + test.getMethodName() + ".png";
-      Screenshot.tirar ( navegador, screenshotArquivo);
-    // isso quer dizer que estou digitando o login a senha e clicando no link singin
-
+               .capturarTextoTask ();
+               assertEquals ( "Here is your tasks, you can manage what you need to do in the next days ou hours, it will help you! Click on the task status to change it! ;)",textoTask);
+               String screenshotArquivo = "C:\\Evidencias\\Evidencias" + Generator.dataHoraParaArquivo () + test.getMethodName() + ".png";
+               Screenshot.tirar ( navegador, screenshotArquivo);
   }
-
-
-
-
-
-
 }
