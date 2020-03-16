@@ -42,6 +42,7 @@ public class CriarTask {
          @Param ( name="title")String title,
          @Param ( name="tellus")String tellus
           ){
+                
                String textoTask = new LoginPage ( navegador )
 
                .clicarBotaoSingup()
