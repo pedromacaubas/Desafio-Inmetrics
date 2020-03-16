@@ -1,0 +1,49 @@
+Projeto de Teste: Inmetrics
+Impresso por TestLink em 16/03/2020
+2012 © TestLink Community
+SUMÁRIO
+1.Tasks
+
+2.Regressão
+In-1: Criar Task
+1.Suíte de Teste : Tasks
+2.Suíte de Teste : Regressão
+ 
+Caso de Teste In-1: Criar Task [Versão : 1]
+Autor:	admin
+Objetivo do Teste::
+Esse caso de teste visa validar a criação de uma Task
+Pré-condições:
+1. Softwares, sistemas e configurações necesserárias:
+1.1 Navegadores Chrome, Firefox, IE10 e Edge.
+_______________________________________________________________________________________________________________________________________________________
+2. Logar nos sistemas abaixo:
+2.1 Acessar a URL: http://www.juliodelima.com.br/taskit/. 
+_______________________________________________________________________________________________________________________________________________________
+3. Massa de Teste
+3.1 N/A
+_______________________________________________________________________________________________________________________________________________________
+#:	Ações do Passo:	Resultados Esperados::	
+1	Na parte inferior da página, clicar no botão OK, I WANNA SIGN UP NOW	Sistema exibe uma tela modal, com um formulário para preenchimento	
+2	Preencher os campos, conforme descrito abaixo:
+Name: Nome Aleatório
+Login: Pode ser preenchido com um nome aleatório sem ser o mesmo utilizado no Name
+Senha: Dado aleatório
+em seguida clicar no botão Save	Sistema atualiza a página com o botão LET´S ADD SOME TASKS!	
+3	Na parte inferior da página clicar no botão LET´S ADD SOME TASKS!, em seguida clicar no botão + ADD A TASKS	Sistema exibe uma tela modal, com um formulário para preenchimento	
+4	Preencher os campos, conforme descrito abaixo:
+Title of this task: Dado aleatório
+Date limit: Selecionar uma data aleatória e clicar no botão OK
+Time limit: Selecionar uma hora aleatória e clicar no botão OK
+Tell us more about it: Dado aleatório
+em seguida clicar no botão Save	Sistema recarrega a página com o texto abaixo:
+My tasks
+Here is your tasks, you can manage what you need to do in the next days ou hours, it will help you! Click on the task status to change it! ;)
+ 	
+
+Tipo de Execução:	Manual
+Estimated exec. duration (min):	
+Prioridade:	Médio
+
+Requisitos	 Nenhum
+Palavras-chave:	 Nenhum
