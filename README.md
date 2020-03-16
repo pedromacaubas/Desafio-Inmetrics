@@ -35,7 +35,7 @@ http://selenium-release.storage.googleapis.com/index.html?path=3.6 (Internet Exp
 
 ## Passo a passo para execução
 
-### O projeto foi desenvolvimeto no padrão Page Object
+#### O projeto foi desenvolvimeto no padrão Page Object
 
 1. inmetrecs\src\test\java\pages:
 
@@ -49,10 +49,10 @@ Nesse diretório as classes para criar o navegador, realizar o screenshot e a ge
 
 Está o teste CriarTask.java nele consta a execução em si, onde estão as anotation @before, @test e @after, também contém outras anotation, como a @DataLoader que carrega o arquivo .csv, fazendo com que vários testes sejam executados de uma única vez, além disso, irá conter a chamada de todos os métodos pertencentes as classes do diretório pages.
 
-### Assista ao vídeo da execução da automação
+#### Assista ao vídeo da execução da automação
 [![Vídeo Automação](http://img.youtube.com/vi/Bs6UGdk546g/0.jpg)](http://www.youtube.com/watch?v=Bs6UGdk546g "Vídeo Automação")
 
-### Autor
+###### Autor
 
 Pedro Silva Macaubas
 
