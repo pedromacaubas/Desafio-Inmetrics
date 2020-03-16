@@ -52,6 +52,11 @@ Está o teste CriarTask.java nele consta a execução em si, onde estão as anot
 ### Assista ao vídeo da execução da automação
 [![Vídeo Automação](http://img.youtube.com/vi/Bs6UGdk546g/0.jpg)](http://www.youtube.com/watch?v=Bs6UGdk546g "Vídeo Automação")
 
+### Autor
+
+Pedro Silva Macaubas
+
+
 
 
 
