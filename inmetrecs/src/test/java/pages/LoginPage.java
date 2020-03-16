@@ -40,9 +40,9 @@ public class LoginPage extends BasePage {
         return this;
     }
 
-    public LoginPage digitarSenha(String password) {
+    public LoginPage digitarSenha(String senha) {
 
-        navegador.findElement(By.name("password")).sendKeys(password);
+        navegador.findElement(By.name("password")).sendKeys(senha);
 
         return this;
     }

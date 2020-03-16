@@ -21,7 +21,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -34,26 +34,27 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="TEXT" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="pages" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pmacauba\IdeaProjects\webdriver-java\src\main\resources" />
+      <recent name="C:\Users\pmacauba\IdeaProjects\webdriver-java\src\test\resources1" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\repository\Desafio-Inmetrics\inmetrecs\src\main\resources" />
       <recent name="C:\Users\pmacauba\IdeaProjects\webdriver-java\src\test" />
       <recent name="C:\Users\pmacauba\IdeaProjects\webdriver-java\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="tests" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\pmacauba\IdeaProjects\webdriver-java\src\main\resources" />
-      <recent name="C:\Users\pmacauba\IdeaProjects\webdriver-java\src\test\resources1" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pages" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -68,14 +69,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CriarTask.testAdicionarUmaInformacaoAdicionalDoUsuario">
+  <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CriarTask.testAdicionarUmaInformacaoAdicionalDoUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CriarTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="webdriverJava" />
       <extension name="coverage">
         <pattern>
@@ -85,7 +86,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.CriarTask" />
-      <option name="METHOD_NAME" value="testAdicionarUmaInformacaoAdicionalDoUsuario" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CriarTask.testCriarTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webdriverJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CriarTask" />
+      <option name="METHOD_NAME" value="testCriarTask" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -124,7 +141,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InformacoesUsuarioTestPageObjetsTest.testAdicionarUmaInformacaoAdicionalDoUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InformacoesUsuarioTest.testAdicionarUmaInformacaoAdicionalDoUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="webdriverJava" />
       <extension name="coverage">
         <pattern>
@@ -133,7 +150,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.InformacoesUsuarioTestPageObjetsTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.InformacoesUsuarioTest" />
       <option name="METHOD_NAME" value="testAdicionarUmaInformacaoAdicionalDoUsuario" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -143,23 +160,6 @@
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testgenerico.Login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="webdriverJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.testgenerico" />
-      <option name="METHOD_NAME" value="Login" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -176,18 +176,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.InformacoesUsuarioTest" />
-      <item itemvalue="JUnit.testgenerico.Login" />
-      <item itemvalue="JUnit.InformacoesUsuarioTestPageObjetsTest.testAdicionarUmaInformacaoAdicionalDoUsuario" />
       <item itemvalue="JUnit.InformacoesUsuarioTestPageObjetsTest" />
-      <item itemvalue="JUnit.CriarTask.testAdicionarUmaInformacaoAdicionalDoUsuario" />
+      <item itemvalue="JUnit.CriarTask.testCriarTask" />
+      <item itemvalue="JUnit.CriarTask" />
+      <item itemvalue="JUnit.InformacoesUsuarioTest.testAdicionarUmaInformacaoAdicionalDoUsuario" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CriarTask.testAdicionarUmaInformacaoAdicionalDoUsuario" />
+        <item itemvalue="JUnit.CriarTask.testCriarTask" />
+        <item itemvalue="JUnit.CriarTask" />
+        <item itemvalue="JUnit.InformacoesUsuarioTest.testAdicionarUmaInformacaoAdicionalDoUsuario" />
         <item itemvalue="JUnit.InformacoesUsuarioTest" />
         <item itemvalue="JUnit.InformacoesUsuarioTestPageObjetsTest" />
-        <item itemvalue="JUnit.testgenerico.Login" />
-        <item itemvalue="JUnit.InformacoesUsuarioTestPageObjetsTest.testAdicionarUmaInformacaoAdicionalDoUsuario" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +209,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

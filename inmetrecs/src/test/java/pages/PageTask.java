@@ -33,8 +33,6 @@ public class PageTask extends BasePage{
 
     public PageTask selecionarDateLimit() {
 
-        //navegador.findElement(By.cssSelector(".waves-light")).click();
-        //navegador.findElement(By.cssSelector(".waves-light")).click();
         WebDriverWait aguardarModal= new WebDriverWait(navegador, 10);
         aguardarModal.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='date']")));
         WebElement element = navegador.findElement(By.xpath("//input[@name='date']"));
@@ -45,28 +43,45 @@ public class PageTask extends BasePage{
     }
     public PageTask clicarBotaoSaveDate() {
 
-
         WebElement element = navegador.findElement(By.xpath("//*[text()='Save']"));
         Actions builder = new Actions(navegador);
         builder.doubleClick(element).perform();
-
-
         return this;
     }
 
-    //(//DIV[@class='clockpicker-tick'][text()='15'][text()='15'])[2]
     public PageTask selecionarTimeLimit() {
-
-        //navegador.findElement(By.cssSelector(".waves-light")).click();
-        //navegador.findElement(By.cssSelector(".waves-light")).click();
         WebDriverWait aguardarModal= new WebDriverWait(navegador, 10);
-        aguardarModal.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='time']")));
-        WebElement element = navegador.findElement(By.xpath("//input[@name='time']"));
+        aguardarModal.until(ExpectedConditions.visibilityOfElementLocated(By.name("time")));
+        WebElement element = navegador.findElement(By.name("time"));
         Actions builder = new Actions(navegador);
+        builder.moveToElement(element).clickAndHold().perform();
         builder.contextClick(element).perform();
-        navegador.findElement(By.xpath("//*[text()='15'][text()='15']")).click();
+        builder.contextClick(element).perform();
+        navegador.findElement(By.xpath("//BUTTON[@type='button'][text()='OK']")).click();
+
         return this;
     }
 
+    public PageTask preencherCampoTellUs(String tellus) {
 
+        navegador.findElement(By.xpath("//TEXTAREA[@placeholder='Tell us, please!']")).sendKeys(tellus);
+        return this;
+    }
+    public PageTask clicarBotaoSaveForm() {
+        navegador.findElement(By.xpath("//A[@class='modal-action waves-effect waves-green btn-flat'][text()='Save']")).click();
+        //WebElement element = navegador.findElement(By.xpath("//*[text()='Save']"));
+        //Actions builder = new Actions(navegador);
+        //builder.doubleClick(element).perform();
+        return this;
+    }
+    public String capturarTextoTask(){
+        // isso abaixo
+        //WebElement mensagemPop = navegador.findElement(By.id("toast-container"));
+        //String mensagem = mensagemPop.getText();
+
+        // é praticamente o mesmmo que
+
+        return navegador.findElement(By.xpath("//P[text()='Here is your tasks, you can manage what you need to do in the next days ou hours, it will help you! Click on the task status to change it! ;)']")).getText ();
+
+    }
 }

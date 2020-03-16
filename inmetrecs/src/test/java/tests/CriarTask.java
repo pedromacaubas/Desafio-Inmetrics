@@ -5,24 +5,29 @@ import org.easetech.easytest.annotation.Param;
 import org.easetech.easytest.runner.DataDrivenTestRunner;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.TestName;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import pages.LoginPage;
+import suporte.Generator;
+import suporte.Screenshot;
 import suporte.Web;
 
 import static org.junit.Assert.assertEquals;
 
 
 @RunWith(DataDrivenTestRunner.class) // com essa anotation estou dizedno para usar a biblioteca DataDrivenTestRunner
-@DataLoader(filePaths = "C:\\Users\\PedroSilvaMacaubas\\Desktop\\selenium\\conteudoselenium\\ConteudoPastaUsuarios\\IdeaProjects\\curso-webdriver-java-master\\curso-webdriver-java-master\\src\\test\\resources\\InformacoesUsuarioPageObjectsTest.csv") // filePaths são os arquivos que queremos utilizar, coloquei
+@DataLoader(filePaths = "C:\\repository\\Desafio-Inmetrics\\inmetrecs\\src\\main\\resources\\CriarTask.csv") // filePaths são os arquivos que queremos utilizar, coloquei
 //o nome do arquivo como InformacoesUsuarioTest, mas poderia ser qualquer nome, esseé somente o nome do arquivo
 
 
 public class CriarTask {
     // variavel do tipo webdriver
     private WebDriver navegador;
-
+    @Rule
+    public TestName test = new TestName();
   @Before
     public void setUp(){
 
@@ -34,37 +39,33 @@ public class CriarTask {
   }
 
   @Test
-  public void testAdicionarUmaInformacaoAdicionalDoUsuario(
-         // @Param ( name="login")String login,
-         // @Param ( name="senha")String senha,
-        //  @Param ( name="tipo")String tipo,
-         // @Param ( name="contato")String contato,
-        //  @Param ( name="mensagem")String mensagemEsperada
+  public void testCriarTask(
+         @Param ( name="name")String name,
+         @Param ( name="login")String login,
+         @Param ( name="senha")String senha,
+         @Param ( name="title")String title,
+         @Param ( name="tellus")String tellus
           ){
 
-              //String textoToast =
-                      new LoginPage ( navegador )
+              String textoTask = new LoginPage ( navegador )
 
                .clicarBotaoSingup()
-               .efetuarCadastro("pedroteste02","pedroteste42","pedroteste04")
+               //.efetuarCadastro("pedroteste02","pedroteste90","pedroteste04")
+                              .efetuarCadastro(name,login,senha)
                .clicarBotaoSomeTasks()
                .clicarBotaoAddTask()
-               .preencherCampoTitle("pdrteslrgsrlrrssss")
+               .preencherCampoTitle(title)
                .selecionarDateLimit()
                .clicarBotaoSaveDate()
-               .selecionarTimeLimit();
-            //.digitarLogin ( "julio0001" )
-           // .digitarSenha ( "123456" )
-              //.clicarSingIn ()
-             // .fazerLogin ( login, senha)
-             // .clicarMe ()
-             // .clicarAbaMoreDataAboutYou ()
-            //  .clicarBotaoAddMoreDataAboutYou ()
-             // .adicionarContato ( tipo , contato)
-             // .capturarTextoToast ();
+               .selecionarTimeLimit()
+               .preencherCampoTellUs(tellus)
+               .clicarBotaoSaveForm()
 
-              //assertEquals ( mensagemEsperada,textoToast);
-
+             .capturarTextoTask ();
+//oi
+              assertEquals ( "Here is your tasks, you can manage what you need to do in the next days ou hours, it will help you! Click on the task status to change it! ;)",textoTask);
+      String screenshotArquivo = "C:\\Evidencias\\Evidencias" + Generator.dataHoraParaArquivo () + test.getMethodName() + ".png";
+      Screenshot.tirar ( navegador, screenshotArquivo);
     // isso quer dizer que estou digitando o login a senha e clicando no link singin
 
   }
