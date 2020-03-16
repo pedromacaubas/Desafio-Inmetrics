@@ -29,11 +29,29 @@ http://selenium-release.storage.googleapis.com/index.html?path=3.6 (Internet Exp
 7. Ainda no test CriarTask.java, alterar a linha String screenshotArquivo = "C:\\Evidencias\\Evidencias" + Generator.dataHoraParaArquivo () + test.getMethodName() + ".png"; alterar o caminho C:\\Evidencias\\Evidencias, esse vai ser o caminho dos screenshot, então basta criar os diretórios dentro de C: igual acima, ou da forma que achar melhor, não esquecendo de alterar no CriarTAsk.java
 
 
-# Guia de instalação
+## Guia de instalação
 
 1. Instalação Intellij - basta realizar o download da versão community, após o download, basta avançar, escolher o projeto Inmetrics, ou iniciar e abri-lo posteriormente
 
-# Passo a passo para execução
+## Passo a passo para execução
+
+### O projeto foi desenvolvimeto no padrão Page Object
+
+1. inmetrecs\src\test\java\pages:
+
+Estão as páginas por onde se passou a execução, exemplo: LoginPage e PageTask, nelas os métodos, nesses métodos são encontrados os elementos, por id, xpath, class e suas respectivas ações, exemplo realizar um click no elemento, um preenchimeto através do sendkeys etc...
+
+2. inmetrecs\src\test\java\suporte:
+
+Nesse diretório as classes para criar o navegador, realizar o screenshot e a generator onde contém o método para salvar arquivos data e hora local.
+
+3. inmetrecs\src\test\java\tests:
+
+Está o teste CriarTask.java nele consta a execução em si, onde estão as anotation @before, @test e @after, também contém outras anotation, como a @DataLoader que carrega o arquivo .csv, fazendo com que vários testes sejam executados de uma única vez, além disso, irá conter a chamada de todos os métodos pertencentes as classes do diretório pages.
+
+### Assista ao vídeo da execução da automação
+[![Vídeo Automação](http://img.youtube.com/vi/Bs6UGdk546g/0.jpg)](http://www.youtube.com/watch?v=Bs6UGdk546g "Vídeo Automação")
+
 
 
 
