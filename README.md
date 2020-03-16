@@ -9,7 +9,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.231-b11, mixed mode)
 Link para download: http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html
 
 2. IDE Intellij (ou similar, eclipse, netbeans etc...) 
-link para download: https://www.jetbrains.com/idea/download/#section=mac
+link para download: https://www.jetbrains.com/idea/download/#section=windows
 
 3. Realizar download do projeto Inmetrics e abri-lo na IDE (ao abrir o prjeto todas as dependências vão estar dentro do arquivo pom.xml, não precisando realizar o download do selenium junit etc...)
 
@@ -28,6 +28,12 @@ http://selenium-release.storage.googleapis.com/index.html?path=3.6 (Internet Exp
 
 7. Ainda no test CriarTask.java, alterar a linha String screenshotArquivo = "C:\\Evidencias\\Evidencias" + Generator.dataHoraParaArquivo () + test.getMethodName() + ".png"; alterar o caminho C:\\Evidencias\\Evidencias, esse vai ser o caminho dos screenshot, então basta criar os diretórios dentro de C: igual acima, ou da forma que achar melhor, não esquecendo de alterar no CriarTAsk.java
 
+
+# Guia de instalação
+
+1. Instalação Intellij - basta realizar o download da versão community, após o download, basta avançar, escolher o projeto Inmetrics, ou iniciar e abri-lo posteriormente
+
+# Passo a passo para execução
 
 
 
