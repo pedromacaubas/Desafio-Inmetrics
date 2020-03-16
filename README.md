@@ -49,6 +49,18 @@ Nesse diretório as classes para criar o navegador, realizar o screenshot e a ge
 
 Está o teste CriarTask.java nele consta a execução em si, onde estão as anotation @before, @test e @after, também contém outras anotation, como a @DataLoader que carrega o arquivo .csv, fazendo com que vários testes sejam executados de uma única vez, além disso, irá conter a chamada de todos os métodos pertencentes as classes do diretório pages.
 
+4. Execução
+
+No teste CriarTask.java, basta em public class CriarTask clicar no ícone (>) que está destacado e em seguida clicar em Run'CriarTask'
+
+Obs: Caso queira executar vários testes, ir na estrutura src\main\resources e no arquivo CriarTask.csv:
+
+Atribuir quantas linhas desejar, seguindo o padrão abaixo:
+
+testCriarTask,name,login,senha,title,tellus
+          ,task,criartaskum,747474,taskum,12345
+										,taskdois,taskdois,747474,taskdois,12345
+
 #### Assista ao vídeo da execução da automação
 [![Vídeo Automação](http://img.youtube.com/vi/Bs6UGdk546g/0.jpg)](http://www.youtube.com/watch?v=Bs6UGdk546g "Vídeo Automação")
 
